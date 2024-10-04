@@ -1,0 +1,29 @@
+body {
+    background-color: blue;
+
+}
+
+header {
+    width: auto;
+    background-color: black;
+    display: flex;
+    flex-direction
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+
+
+.menu li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.menu li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
