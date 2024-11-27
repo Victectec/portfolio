@@ -1,0 +1,64 @@
+<style>
+        header {
+            position: absolute;
+            /* Faz o header ficar acima do canvas */
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 13px; /* Reduzi o padding */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fundo semi-transparente */
+            z-index: 10;
+            /* Garante que o header fique acima do canvas */
+        }
+
+        .container-logo img {
+            height: 85px; /* Limita a altura da logo */
+            max-width: 100%;
+        }
+
+        .menu ul {
+            list-style: none; /* Remove os marcadores da lista */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Faz os itens ficarem em linha */
+            gap: 15px; /* Espaçamento entre os itens */
+        }
+
+        .menu li a {
+    font-size: 18px; /* Tamanho da fonte */
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.menu li a:hover {
+    transform: translateZ(10px); /* Faz o botão avançar 10px */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3); /* Adiciona uma leve sombra */
+    background-color: rgba(255, 255, 255, 0.1); /* Adiciona um leve fundo ao passar o mouse */
+    border-radius: 5px; /* Arredonda os cantos */
+}
+    </style>
+</head>
+
+<body>
+    <header class="teto">
+        <div class="container-logo">
+            <img src="images-removebg-preview.png" alt="Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/curriculo">Currículo</a></li>
+                <li><a href="matematica/matematica.html">Matemática</a></li>
+                <li><a href="chs/chs.html">CHS</a></li>
+                <li><a href="ling/lingua.html">Linguagens</a></li>
+                <li><a href="cnt/cnt.html">CNT</a></li>
+                <li><a href="iot/iot.html">IOT</a></li>
+            </ul>
+        </nav>
+    </header>

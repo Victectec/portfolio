@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo - Seu Nome</title>
-  <link rel="stylesheet" href="styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Victor Araujo</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
+
 <body>
-  <header>
-    <h1>const NomeCompleto = victor Araujo;</h1>
-    <h2>// Desenvolvedor Web | Ruby | Bash | javascript</h2>
-  </header>
+    <!-- Container para o Header -->
+    <div id="header-container"></div>
 
-  <main>
-    <section>
-      <h3>function SobreMim() {</h3>
-      <p class="code">return "adoro tecnologia principalmente robotica e computação grafica. Busco sempre aprender e aplicar novas tecnologias.";</p>
-      <h3>}</h3>
-    </section>
+    <!-- Currículo -->
+    <main class="resume">
+        <!-- Informações Pessoais -->
+        <section class="info">
+            <h2>Informações Pessoais</h2>
+            <p><strong>📧 E-mail:</strong> seuemail@example.com</p>
+            <p><strong>📞 Telefone:</strong> (XX) XXXXX-XXXX</p>
+            <p><strong>🌐 GitHub:</strong> <a href="https://github.com/seuusuario" target="_blank" rel="noopener">github.com/seuusuario</a></p>
+            <p><strong>💼 LinkedIn:</strong> <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener">linkedin.com/in/seuusuario</a></p>
+        </section>
 
-    <section>
-      <h3>const Experiencia = [</h3>
-      <div class="code expand-section">
-        <p>{"Empresa": "Dialogo", "Cargo": "corretor", "Período": "2024-2024"},</p>
-        <p>{"Empresa": "Digimed", "Cargo": "Suporte tecnico", "Período": "2024-"}</p>
-      </div>
-      <h3>];</h3>
-    </section>
+        <!-- Objetivo -->
+        <section class="objective">
+            <h2>Objetivo</h2>
+            <p>Desenvolver soluções criativas e contribuir para projetos que impactem positivamente pessoas e empresas, com foco em aprendizado e inovação.</p>
+        </section>
 
-    <section>
-      <h3>const Projetos = [</h3>
-      <div class="code expand-section">
-        <p>{"Nome": "conversor", "Descrição": "Projeto completo em javascript"},</p>
-        <p>{"Nome": "Automação Bash", "Descrição": "Scripts para otimização de processos"}</p>
-      </div>
-      <h3>];</h3>
-    </section>
-  </main>
+        <!-- Educação -->
+        <section class="education">
+            <h2>Educação</h2>
+            <ul>
+                <li>
+                    <strong>Ensino Médio</strong> - Nome da Escola<br>
+                    <span class="year">Conclusão: 202X</span>
+                </li>
+                <li>
+                    <strong>Curso Técnico/Faculdade (Opcional)</strong> - Nome da Instituição<br>
+                    <span class="year">Período: 202X - Presente</span>
+                </li>
+            </ul>
+        </section>
 
-  <footer>
-    <p>// Contato: vtaraujo2070@gmail.com | Tel: (11) 94803-1757 | Github: https://github.com/Victectec</p>
-  </footer>
+        <!-- Experiência -->
+        <section class="experience">
+            <h2>Experiência</h2>
+            <ul>
+                <li>
+                    <strong>Projeto 1</strong> - Detalhes sobre o projeto.<br>
+                    <span class="description">Ex.: Criação de uma aplicação web para gerenciar tarefas usando HTML, CSS e JavaScript.</span>
+                </li>
+                <li>
+                    <strong>Projeto 2</strong> - Detalhes sobre o projeto.<br>
+                    <span class="description">Ex.: Desenvolvimento de uma página para portfólio com design responsivo.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+                <li>HTML5, CSS3</li>
+                <li>JavaScript (Básico/Intermediário)</li>
+                <li>Versionamento com Git/GitHub</li>
+                <li>Resolução de problemas e pensamento crítico</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desenvolvido por Victor Araujo</p>
+    </footer>
+
+    <!-- Script para carregar o header -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o header:', error));
+    </script>
 </body>
+
 </html>

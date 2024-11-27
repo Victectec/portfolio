@@ -1,33 +1,87 @@
+/* Estilos Gerais */
 body {
-    background-color: #1E1E1E;
-    color: #00FF00;
-    font-family: "Courier New", monospace;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-  }
-  
-  header, footer {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  h1, h2, h3 {
-    color: #FFFFFF;
-  }
-  
-  .code {
-    margin-left: 20px;
-  }
-  
-  .expand-section {
-    cursor: pointer;
-    transition: max-height 0.3s ease-in-out;
-    overflow: hidden;
-  }
-  
-  .expand-section.collapsed {
-    max-height: 0;
-    display: none;
-  }
-  
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #252526;
+  color: #9cdcfe;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #dcdcaa;
+}
+
+/* Currículo */
+main.resume {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #4ec9b0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+section a {
+  color: #9cdcfe;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #c586c0;
+}
+
+.year {
+  font-size: 0.9rem;
+  color: #dcdcaa;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #252526;
+  color: #dcdcaa;
+  border-top: 1px solid #333;
+}
