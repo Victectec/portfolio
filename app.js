@@ -32,7 +32,7 @@ app.get('/matematica', (req, res) => {
     res.sendFile(path.join(__dirname,"public", 'matematica/matematica.html'));
 });
 
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,"public", 'header.html'));
 });
 

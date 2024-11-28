@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porfolio</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o estilo personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header com Bootstrap -->
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="mb-0">meus trabalhos</h1>
+            <a href="javascript:history.back()" class="btn btn-light">Voltar</a>
+        </div>
+    </header>
+
+    <!-- Galeria -->
+    <main class="gallery container mt-4">
+        <div class="row">
+            <!-- Cada "div" representa um item da galeria -->
+            <div class="gallery-item col-md-4 mb-4">
+                <div class="card">
+                    <img src="cnt.jpg" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h3 class="card-title">polimetos</h3>
+                        <p class="card-text">fazer um baner sobre o tema de polimeros</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item col-md-4 mb-4">
+                <div class="card">
+                    <img src="quimi.png" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h3 class="card-title">esperimento com dna</h3>
+                        <p class="card-text">fizemos um processo para extrair o dna de um morango</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+    </main>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="user.js"></script>
+</body>
+</html>

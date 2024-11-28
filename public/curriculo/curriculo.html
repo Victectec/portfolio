@@ -5,47 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - Victor Araujo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles2.css">
 </head>
 
 <body>
-    <!-- Container para o Header -->
-    <div id="header-container"></div>
+    <!-- Header -->
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 mb-0">Currículo - Victor Araujo</h1>
+            <!-- Botão Voltar -->
+            <button class="btn btn-light" onclick="window.history.back()">
+                <i class="bi bi-arrow-left"></i> Voltar
+            </button>
+        </div>
+    </header>
 
     <!-- Currículo -->
-    <main class="resume">
+    <main class="resume container my-5">
         <!-- Informações Pessoais -->
-        <section class="info">
+        <section class="info mb-4">
             <h2>Informações Pessoais</h2>
-            <p><strong>📧 E-mail:</strong> seuemail@example.com</p>
-            <p><strong>📞 Telefone:</strong> (XX) XXXXX-XXXX</p>
-            <p><strong>🌐 GitHub:</strong> <a href="https://github.com/seuusuario" target="_blank" rel="noopener">github.com/seuusuario</a></p>
-            <p><strong>💼 LinkedIn:</strong> <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener">linkedin.com/in/seuusuario</a></p>
+            <p><strong>📧 E-mail:</strong> vtaraujo2070@gmail.com</p>
+            <p><strong>📞 Telefone:</strong> (11) 94803-1757</p>
+            <p><strong>🌐 GitHub:</strong> <a href="https://github.com/Victectec" target="_blank" rel="noopener">https://github.com/Victectec</a></p>
+            <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/victoraraujo07" target="_blank" rel="noopener">www.linkedin.com/in/victoraraujo07</a></p>
         </section>
 
         <!-- Objetivo -->
-        <section class="objective">
+        <section class="objective mb-4">
             <h2>Objetivo</h2>
             <p>Desenvolver soluções criativas e contribuir para projetos que impactem positivamente pessoas e empresas, com foco em aprendizado e inovação.</p>
         </section>
 
         <!-- Educação -->
-        <section class="education">
+        <section class="education mb-4">
             <h2>Educação</h2>
             <ul>
                 <li>
-                    <strong>Ensino Médio</strong> - Nome da Escola<br>
-                    <span class="year">Conclusão: 202X</span>
+                    <strong>Ensino Médio</strong> - Senac Nações Unidas<br>
+                    <span class="year">Conclusão: 2024</span>
                 </li>
                 <li>
-                    <strong>Curso Técnico/Faculdade (Opcional)</strong> - Nome da Instituição<br>
-                    <span class="year">Período: 202X - Presente</span>
+                    <strong>Curso Técnico</strong> - Senac<br>
+                    <span class="year">Período: 2024 - Presente</span>
                 </li>
             </ul>
         </section>
 
         <!-- Experiência -->
-        <section class="experience">
+        <section class="experience mb-4">
             <h2>Experiência</h2>
             <ul>
                 <li>
@@ -72,19 +83,13 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="text-center py-3 bg-light">
         <p>Desenvolvido por Victor Araujo</p>
     </footer>
 
-    <!-- Script para carregar o header -->
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar o header:', error));
-    </script>
+    <!-- Bootstrap JS e Bootstrap Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 
 </html>
